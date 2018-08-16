@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 162.0, 104.0, 1093.0, 696.0 ],
+		"rect" : [ 165.0, 44.0, 881.0, 763.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,205 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-96",
+					"#init" : "",
+					"#loadbang" : 0,
+					"#triggerall" : 0,
+					"#untuple" : 0,
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"ftm_objref_conv" : 0,
+					"ftm_scope" : 3,
+					"id" : "obj-22",
+					"maxclass" : "ftm.mess",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 254.0, 32.0, 66.011719, 18.0 ],
+					"presentation_rect" : [ 254.0, 32.0, 66.011719, 18.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.22,
+					"bubbleside" : 0,
+					"fontname" : "Gujarati Sangam MN",
+					"id" : "obj-20",
 					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 601.0, 284.5, 359.0, 127.0 ],
+					"patching_rect" : [ 375.0, 200.0, 115.0, 177.0 ],
+					"style" : "",
+					"text" : " A more familiar way to code this up would be a Boolean If/then, in which our code would wait to act until a given conditional was met. "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
+					"id" : "obj-5",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 329.0, 695.0, 509.0, 57.0 ],
+					"style" : "",
+					"text" : "prepared for AME494/AME598 \nresponsive media enviroments \nFall 2018, Synthesis Center ",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"border" : 4,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"grad1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+					"grad2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"id" : "obj-15",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 20.0, 678.0, 818.0, 4.0 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
+					"id" : "obj-17",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 20.0, 695.0, 369.0, 57.0 ],
+					"style" : "",
+					"text" : "questions, comments, suggestions welcome:  garrett.l.johnson@asu.edu\n\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"border" : 2,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"grad1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+					"grad2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"id" : "obj-1",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 20.0, 543.0, 819.0, 121.0 ],
+					"presentation_rect" : [ 38.0, 555.0, 0.0, 0.0 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 20.0, 778.202148, 60.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 20.0, 808.202148, 113.0, 22.0 ],
+					"style" : "",
+					"text" : "toolbarvisible 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.595187,
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 20.0, 840.202148, 132.0, 21.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"style" : "",
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
+					"fontsize" : 18.0,
+					"id" : "obj-12",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 13.0, 96.5, 397.5, 32.0 ],
+					"style" : "",
+					"text" : "1a2: events, boolean, and if/then rules"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"border" : 4,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"grad1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+					"grad2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"id" : "obj-10",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 12.0, 83.0, 834.0, 4.0 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
+					"fontsize" : 36.0,
+					"id" : "obj-7",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 10.0, 15.0, 658.0, 57.0 ],
+					"style" : "",
+					"text" : "Lesson 1 // continuous vs. discrete "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
+					"id" : "obj-96",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 35.0, 556.0, 795.0, 90.0 ],
 					"style" : "",
 					"text" : "a central weakness in this approach is determining how high or low to set the threshold. There are more or less elegant solutions to this problem, but this technical issue is belied by a more philosophical point: we cannot define the event in advance. \n\nfurthermore, we don't need to conserve processing power in this way. Additionally, since Max is working with video and audio at high temporal resolutions, we want to take advantage of the continuous flow of data. "
 				}
@@ -57,21 +250,23 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 72.0, 320.0, 24.0, 24.0 ],
+					"patching_rect" : [ 526.0, 143.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bubble" : 1,
+					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-93",
-					"linecount" : 5,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 595.0, 97.0, 333.0, 74.0 ],
+					"patching_rect" : [ 132.5, 246.0, 170.0, 162.0 ],
 					"style" : "",
-					"text" : "this threshold/trigger approach resembles some techniques from more traditional coding environments, in which a scarcity of events represented efficiency. A more familiar way to code this up would be a Boolean If/then, in which our code would wait to act until a given conditional was met. "
+					"text" : "this threshold/trigger approach resembles some techniques from more traditional coding environments, in which one may aim for preserve a scarcity of events  in the name of efficiency."
 				}
 
 			}
@@ -82,7 +277,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 640.0, 239.0, 24.0, 24.0 ],
+					"patching_rect" : [ 345.0, 200.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -94,20 +289,22 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 640.0, 205.0, 126.0, 22.0 ],
+					"patching_rect" : [ 345.0, 166.0, 126.0, 22.0 ],
 					"style" : "",
-					"text" : "if $i1 > 244 then bang"
+					"text" : "if $i1 > 254 then bang"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bubble" : 1,
+					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-89",
 					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 242.0, 602.0, 150.0, 74.0 ],
+					"patching_rect" : [ 676.0, 407.0, 191.0, 94.0 ],
 					"style" : "",
 					"text" : "with this simplistic form of analysis, our rich video input would be indistingusihable from this simple synthesized video!"
 				}
@@ -120,7 +317,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 72.0, 382.0, 57.0, 22.0 ],
+					"patching_rect" : [ 526.0, 205.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "t b b"
 				}
@@ -133,7 +330,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 127.0, 472.0, 24.0, 24.0 ],
+					"patching_rect" : [ 581.0, 295.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -145,7 +342,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 72.0, 355.0, 121.0, 22.0 ],
+					"patching_rect" : [ 526.0, 178.0, 121.0, 22.0 ],
 					"style" : "",
 					"text" : "metro 100 @active 1"
 				}
@@ -158,7 +355,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 110.0, 444.0, 36.0, 22.0 ],
+					"patching_rect" : [ 564.0, 267.0, 36.0, 22.0 ],
 					"style" : "",
 					"text" : "sel 0"
 				}
@@ -171,7 +368,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "", "", "int" ],
-					"patching_rect" : [ 110.0, 413.0, 61.0, 22.0 ],
+					"patching_rect" : [ 564.0, 236.0, 61.0, 22.0 ],
 					"style" : "",
 					"text" : "counter 5"
 				}
@@ -184,7 +381,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.0, 514.0, 132.0, 22.0 ],
+					"patching_rect" : [ 564.0, 313.0, 132.0, 22.0 ],
 					"style" : "",
 					"text" : "setall 255 255 255 255"
 				}
@@ -197,7 +394,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 127.0, 514.0, 79.0, 22.0 ],
+					"patching_rect" : [ 581.0, 337.0, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "setall 0 0 0 0"
 				}
@@ -210,7 +407,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 110.0, 584.0, 98.0, 96.0 ]
+					"patching_rect" : [ 564.0, 407.0, 98.0, 96.0 ]
 				}
 
 			}
@@ -221,7 +418,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 110.0, 545.0, 167.0, 22.0 ],
+					"patching_rect" : [ 564.0, 368.0, 167.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.matrix blink 4 char 100 100"
 				}
@@ -234,21 +431,23 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 177.0, 263.0, 58.0, 58.0 ],
+					"patching_rect" : [ 68.0, 386.0, 58.0, 58.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bubble" : 1,
+					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-70",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 317.0, 180.0, 202.0, 47.0 ],
+					"patching_rect" : [ 316.0, 434.0, 194.5, 78.0 ],
 					"style" : "",
-					"text" : "instead of using the curve of the data (see below), we are only attending for a singular event. "
+					"text" : "instead of using the curve of the data, we are only attending for a singular event. "
 				}
 
 			}
@@ -260,24 +459,10 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 312.0, 246.0, 172.0, 142.0 ],
+					"patching_rect" : [ 152.5, 425.0, 150.0, 87.0 ],
 					"setminmax" : [ 0.0, 255.0 ],
 					"setstyle" : 3,
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 18.0,
-					"id" : "obj-61",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 14.5, 22.0, 133.0, 47.0 ],
-					"style" : "",
-					"text" : "thresholding + triggering, pt. 2"
 				}
 
 			}
@@ -288,7 +473,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 177.0, 229.0, 54.0, 22.0 ],
+					"patching_rect" : [ 68.0, 352.0, 54.0, 22.0 ],
 					"style" : "",
 					"text" : "togedge"
 				}
@@ -302,7 +487,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 129.0, 217.0, 24.0, 24.0 ],
+					"patching_rect" : [ 20.0, 340.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -314,7 +499,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 177.0, 197.0, 48.0, 22.0 ],
+					"patching_rect" : [ 68.0, 320.0, 48.0, 22.0 ],
 					"style" : "",
 					"text" : ">= 254"
 				}
@@ -327,7 +512,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 166.5, 123.0, 73.0, 22.0 ],
+					"patching_rect" : [ 57.5, 246.0, 73.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.rgb2luma"
 				}
@@ -340,7 +525,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 166.5, 163.0, 50.5, 22.0 ],
+					"patching_rect" : [ 57.5, 286.0, 50.5, 22.0 ],
 					"style" : "",
 					"text" : "jit.3m"
 				}
@@ -358,31 +543,31 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u566000540" ],
 									"dim" : [ 1, 1 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"drawto" : [ "" ],
+									"usesrcrect" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"loopstart" : [ 0 ],
+									"interp" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"loopend" : [ 0 ],
+									"colormode" : [ "argb" ],
 									"adapt" : [ 1 ],
 									"moviefile" : [ "" ],
 									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
-									"vol" : [ 1.0 ],
-									"time_secs" : [ 0.0 ],
+									"automatic" : [ 0 ],
 									"engine" : [ "avf" ],
-									"unique" : [ 0 ],
-									"loopreport" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"framereport" : [ 0 ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"time" : [ 0 ],
-									"loopend" : [ 0 ],
+									"vol" : [ 1.0 ],
 									"texture_name" : [ "u377000538" ],
-									"usedstrect" : [ 0 ],
-									"looppoints" : [ 0, 0 ],
-									"loopstart" : [ 0 ],
-									"colormode" : [ "argb" ],
 									"autostart" : [ 1 ],
-									"output_texture" : [ 0 ],
-									"interp" : [ 0 ],
-									"automatic" : [ 0 ]
+									"unique" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"time" : [ 0 ],
+									"drawto" : [ "" ],
+									"framereport" : [ 0 ],
+									"looppoints" : [ 0, 0 ]
 								}
 
 							}
@@ -394,7 +579,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "", "dictionary" ],
-					"patching_rect" : [ 166.5, 22.0, 249.0, 83.0 ],
+					"patching_rect" : [ 57.5, 145.0, 249.0, 83.0 ],
 					"style" : ""
 				}
 
@@ -420,6 +605,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -451,6 +643,13 @@
 					"destination" : [ "obj-90", 0 ],
 					"order" : 0,
 					"source" : [ "obj-4", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -552,6 +751,10 @@
 				"patcherrelativepath" : "../../../../Max 7/Packages/Max for the Visual Arts/media/Video",
 				"type" : "MooV",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "ftm.mess.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 570.0, 85.0, 640.0, 710.0 ],
+		"rect" : [ 570.0, 85.0, 830.0, 710.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,92 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 613.0, 162.0, 58.0, 22.0 ],
+					"style" : "",
+					"text" : "metro 33"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 617.0, 131.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 735.0, 166.0, 39.0, 22.0 ],
+					"presentation_rect" : [ 735.0, 164.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "close"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 673.0, 166.0, 37.0, 22.0 ],
+					"style" : "",
+					"text" : "open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 657.5, 202.0, 47.0, 22.0 ],
+					"style" : "",
+					"text" : "jit.grab"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 647.0, 101.5, 150.0, 47.0 ],
+					"presentation_rect" : [ 500.0, 79.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "try w. live video and use your hand over your camera"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 458.0, 256.0, 130.0, 22.0 ],
+					"patching_rect" : [ 448.0, 196.0, 130.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.op @op !- @val 255"
 				}
@@ -60,31 +140,31 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u594000478" ],
 									"dim" : [ 1, 1 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"drawto" : [ "" ],
+									"usesrcrect" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"loopstart" : [ 0 ],
+									"interp" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"loopend" : [ 0 ],
+									"colormode" : [ "argb" ],
 									"adapt" : [ 1 ],
 									"moviefile" : [ "" ],
 									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
-									"vol" : [ 1.0 ],
-									"time_secs" : [ 0.0 ],
+									"automatic" : [ 0 ],
 									"engine" : [ "avf" ],
-									"unique" : [ 0 ],
-									"loopreport" : [ 0 ],
-									"rate" : [ 0.137931 ],
-									"framereport" : [ 0 ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"time" : [ 0 ],
-									"loopend" : [ 0 ],
+									"vol" : [ 1.0 ],
 									"texture_name" : [ "u892000476" ],
-									"usedstrect" : [ 0 ],
-									"looppoints" : [ 0, 0 ],
-									"loopstart" : [ 0 ],
-									"colormode" : [ "argb" ],
 									"autostart" : [ 1 ],
-									"output_texture" : [ 0 ],
-									"interp" : [ 0 ],
-									"automatic" : [ 0 ]
+									"unique" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 0.137931 ],
+									"usedstrect" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"time" : [ 0 ],
+									"drawto" : [ "" ],
+									"framereport" : [ 0 ],
+									"looppoints" : [ 0, 0 ]
 								}
 
 							}
@@ -124,31 +204,31 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u594000478" ],
 									"dim" : [ 1, 1 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"drawto" : [ "" ],
+									"usesrcrect" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"loopstart" : [ 0 ],
+									"interp" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"loopend" : [ 0 ],
+									"colormode" : [ "argb" ],
 									"adapt" : [ 1 ],
 									"moviefile" : [ "" ],
 									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
-									"vol" : [ 1.0 ],
-									"time_secs" : [ 0.0 ],
+									"automatic" : [ 0 ],
 									"engine" : [ "avf" ],
-									"unique" : [ 0 ],
-									"loopreport" : [ 0 ],
-									"rate" : [ 0.137931 ],
-									"framereport" : [ 0 ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"time" : [ 0 ],
-									"loopend" : [ 0 ],
+									"vol" : [ 1.0 ],
 									"texture_name" : [ "u892000476" ],
-									"usedstrect" : [ 0 ],
-									"looppoints" : [ 0, 0 ],
-									"loopstart" : [ 0 ],
-									"colormode" : [ "argb" ],
 									"autostart" : [ 1 ],
-									"output_texture" : [ 0 ],
-									"interp" : [ 0 ],
-									"automatic" : [ 0 ]
+									"unique" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 0.137931 ],
+									"usedstrect" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"time" : [ 0 ],
+									"drawto" : [ "" ],
+									"framereport" : [ 0 ],
+									"looppoints" : [ 0, 0 ]
 								}
 
 							}
@@ -160,7 +240,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "", "dictionary" ],
-					"patching_rect" : [ 439.0, 204.0, 150.0, 30.0 ],
+					"patching_rect" : [ 438.0, 232.0, 150.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -460,31 +540,31 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u566000540" ],
 									"dim" : [ 1, 1 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"drawto" : [ "" ],
+									"usesrcrect" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"loopstart" : [ 0 ],
+									"interp" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"loopend" : [ 0 ],
+									"colormode" : [ "argb" ],
 									"adapt" : [ 1 ],
 									"moviefile" : [ "" ],
 									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
-									"vol" : [ 1.0 ],
-									"time_secs" : [ 0.0 ],
+									"automatic" : [ 0 ],
 									"engine" : [ "avf" ],
-									"unique" : [ 0 ],
-									"loopreport" : [ 0 ],
-									"rate" : [ 0.137931 ],
-									"framereport" : [ 0 ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"time" : [ 0 ],
-									"loopend" : [ 0 ],
+									"vol" : [ 1.0 ],
 									"texture_name" : [ "u377000538" ],
-									"usedstrect" : [ 0 ],
-									"looppoints" : [ 0, 0 ],
-									"loopstart" : [ 0 ],
-									"colormode" : [ "argb" ],
 									"autostart" : [ 1 ],
-									"output_texture" : [ 0 ],
-									"interp" : [ 0 ],
-									"automatic" : [ 0 ]
+									"unique" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 0.137931 ],
+									"usedstrect" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"time" : [ 0 ],
+									"drawto" : [ "" ],
+									"framereport" : [ 0 ],
+									"looppoints" : [ 0, 0 ]
 								}
 
 							}
@@ -548,6 +628,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-22", 0 ]
 				}
@@ -592,6 +686,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-33", 0 ]
 				}
 
 			}
@@ -660,6 +768,13 @@
 					"destination" : [ "obj-3", 0 ],
 					"order" : 2,
 					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}

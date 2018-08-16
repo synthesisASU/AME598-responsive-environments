@@ -414,14 +414,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-64",
-					"linecount" : 4,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 903.0, 239.5, 235.0, 62.0 ],
+					"patching_rect" : [ 903.0, 239.5, 235.0, 35.0 ],
 					"style" : "",
-					"text" : "220. 243.91304 267.82608 291.739136 301.304352 315.652161 325.217377 349.130432 373.043488 396.956512 416.086945 420.869568 440."
+					"text" : "220. 248.6 277.2 305.8 344.3 372.9 401.5 440."
 				}
 
 			}
@@ -783,21 +783,6 @@
 					"patching_rect" : [ 35.0, 273.5, 58.0, 22.0 ],
 					"style" : "",
 					"text" : "t l l"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"bubblepoint" : 1.0,
-					"id" : "obj-15",
-					"linecount" : 9,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 126.5, 81.0, 266.0, 131.0 ],
-					"style" : "",
-					"text" : "we do not need to downsize for background subtraction, but rather this will make it handy to feed the pixel data into some media apparati like synthesizers or DMX lights. this is a very useful technique but in each case we must ensure that we do not sacrifice too much. that balance can be tricky to find, but its helps to remember this is not an image produced for viewing.  "
 				}
 
 			}
@@ -1582,10 +1567,6 @@
 				"patcherrelativepath" : "../../../../Max 7/Packages/bach/patchers",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "jit.absdiff.mxo",
-				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.pack.mxo",

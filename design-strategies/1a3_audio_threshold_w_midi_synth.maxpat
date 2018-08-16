@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 107.0, 120.0, 497.0, 693.0 ],
+		"rect" : [ 89.0, 44.0, 745.0, 802.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,111 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-25",
+					"fontname" : "Gujarati Sangam MN",
+					"id" : "obj-5",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 375.0, 315.5, 150.0, 20.0 ],
+					"patching_rect" : [ 322.0, 847.0, 509.0, 57.0 ],
 					"style" : "",
-					"text" : "a key part of this "
+					"text" : "prepared for AME494/AME598 \nresponsive media enviroments \nFall 2018, Synthesis Center ",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"border" : 4,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"grad1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+					"grad2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"id" : "obj-6",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 13.0, 830.0, 818.0, 4.0 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
+					"id" : "obj-8",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 13.0, 847.0, 369.0, 57.0 ],
+					"style" : "",
+					"text" : "questions, comments, suggestions welcome:  garrett.l.johnson@asu.edu\n\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.85,
+					"fontname" : "Gujarati Sangam MN",
+					"id" : "obj-1",
+					"linecount" : 19,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 415.5, 325.0, 333.0, 330.0 ],
+					"presentation_rect" : [ 347.5, 511.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "Instead of using a simple oscilator and envelope generator, this patch uses a more robust bpatcher-wrapped frequency modulation synth designed to emulate a bell sound. \n\nThis synth accepts MIDI formated messages. MIDI was developed as a protocol to facilitate easy exchange between digitial synthesizers and musical instruments. MIDI messages are in some ways analogous to notes of Western sheet music; the sonic texture is characterized by a pitch (usually equap tempered), a velocity (a hold over from digital pianos), and a duration. \nmore here: https://en.wikipedia.org/wiki/MIDI\n\nNote how the MIDI synth works very easily with the sensor data formed into event-based control messages. Keep this in mind as we start to look to more continuous sensor data."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
+					"fontsize" : 18.0,
+					"id" : "obj-12",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 13.0, 96.5, 627.5, 32.0 ],
+					"style" : "",
+					"text" : "1a3: audio thresholding + MIDI protocol as event-based approach"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"border" : 4,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"grad1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+					"grad2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"id" : "obj-10",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 12.0, 83.0, 656.0, 4.0 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
+					"fontsize" : 36.0,
+					"id" : "obj-7",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 10.0, 15.0, 658.0, 57.0 ],
+					"style" : "",
+					"text" : "Lesson 1 // continuous vs. discrete "
 				}
 
 			}
@@ -55,7 +153,7 @@
 					"numinlets" : 7,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 242.0, 394.0, 82.0, 22.0 ],
+					"patching_rect" : [ 241.0, 505.0, 82.0, 22.0 ],
 					"style" : "",
 					"text" : "midiformat"
 				}
@@ -68,7 +166,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 242.0, 358.0, 110.0, 22.0 ],
+					"patching_rect" : [ 241.0, 469.0, 110.0, 22.0 ],
 					"style" : "",
 					"text" : "join"
 				}
@@ -89,7 +187,7 @@
 					"numoutlets" : 4,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 11.0, 429.0, 250.0, 196.0 ],
+					"patching_rect" : [ 10.0, 540.0, 250.0, 196.0 ],
 					"presentation_rect" : [ 0.0, 0.0, 250.0, 196.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -189,7 +287,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 638.0, 45.0, 45.0 ],
+					"patching_rect" : [ 13.0, 755.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -201,7 +299,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 242.0, 294.0, 64.5, 22.0 ],
+					"patching_rect" : [ 241.0, 405.0, 64.5, 22.0 ],
 					"style" : "",
 					"text" : "t 60 i"
 				}
@@ -214,7 +312,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 242.0, 129.5, 64.5, 22.0 ],
+					"patching_rect" : [ 241.0, 240.5, 64.5, 22.0 ],
 					"style" : "",
 					"text" : "t f f"
 				}
@@ -227,7 +325,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 242.0, 260.0, 64.5, 22.0 ],
+					"patching_rect" : [ 241.0, 371.0, 64.5, 22.0 ],
 					"style" : "",
 					"text" : "i"
 				}
@@ -240,7 +338,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 287.5, 223.0, 113.0, 22.0 ],
+					"patching_rect" : [ 286.5, 334.0, 113.0, 22.0 ],
 					"style" : "",
 					"text" : "zmap 1. 10. 0. 127."
 				}
@@ -253,7 +351,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 242.0, 324.0, 110.0, 22.0 ],
+					"patching_rect" : [ 241.0, 435.0, 110.0, 22.0 ],
 					"style" : "",
 					"text" : "makenote 60 200"
 				}
@@ -261,12 +359,15 @@
 			}
 , 			{
 				"box" : 				{
+					"bubble" : 1,
+					"bubbleside" : 0,
+					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-20",
-					"linecount" : 5,
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 338.5, 150.0, 74.0 ],
+					"patching_rect" : [ 71.0, 351.5, 150.0, 126.0 ],
 					"style" : "",
 					"text" : "not surprisingly, upon closer inspection we see that even the amplitude data can potentially contain a lot of information"
 				}
@@ -280,7 +381,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 14.5, 245.0, 150.0, 88.0 ],
+					"patching_rect" : [ 71.0, 257.0, 150.0, 88.0 ],
 					"setminmax" : [ 0.0, 5.0 ],
 					"setstyle" : 3,
 					"style" : ""
@@ -289,12 +390,16 @@
 			}
 , 			{
 				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.94,
+					"bubbleside" : 3,
+					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-18",
-					"linecount" : 4,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 335.0, 77.5, 150.0, 60.0 ],
+					"patching_rect" : [ 71.0, 150.5, 150.0, 94.0 ],
 					"style" : "",
 					"text" : "this is a very crude way to detect audio events using only amplitude of the microphone signal. "
 				}
@@ -307,7 +412,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 242.0, 222.0, 24.0, 24.0 ],
+					"patching_rect" : [ 241.0, 333.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -319,7 +424,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 242.0, 189.0, 54.0, 22.0 ],
+					"patching_rect" : [ 241.0, 300.0, 54.0, 22.0 ],
 					"style" : "",
 					"text" : "togedge"
 				}
@@ -332,7 +437,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 242.0, 160.0, 38.0, 22.0 ],
+					"patching_rect" : [ 241.0, 271.0, 38.0, 22.0 ],
 					"style" : "",
 					"text" : ">= 1."
 				}
@@ -345,7 +450,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 242.0, 101.0, 80.0, 13.0 ],
+					"patching_rect" : [ 241.0, 212.0, 80.0, 13.0 ],
 					"style" : ""
 				}
 
@@ -357,35 +462,24 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 242.0, 32.0, 45.0, 45.0 ],
+					"patching_rect" : [ 241.0, 143.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.85,
+					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-2",
-					"linecount" : 8,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.5, 124.0, 180.0, 114.0 ],
+					"patching_rect" : [ 328.5, 143.0, 339.5, 162.0 ],
 					"style" : "",
-					"text" : "the same critiques may be applied to any continuous time-series sensor data: \n>photocells >accelerometer/gyroscope, >distance camera\n>temp sensor\n>and, of course, audio"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 18.0,
-					"id" : "obj-61",
-					"linecount" : 5,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 14.5, 10.0, 211.0, 107.0 ],
-					"style" : "",
-					"text" : "Lesson 1: Discrete vs Continuous \n\n1a3// audio thresholding w. MIDI synth"
+					"text" : "we can apply the thresholding technique to audio, too.\n\nthe same critiques may be applied to any continuous time-series sensor data: \n>photocells >accelerometer/gyroscope, >distance camera\n>temp sensor\n>etc."
 				}
 
 			}

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 406.0, 97.0, 954.0, 710.0 ],
+		"rect" : [ 142.0, 109.0, 1040.0, 703.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,92 +38,96 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 281.5, 330.0, 29.5, 22.0 ],
-					"style" : "",
-					"text" : "jit.*"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-33",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 637.0, 196.5, 58.0, 22.0 ],
-					"style" : "",
-					"text" : "metro 33"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 641.0, 165.5, 24.0, 24.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 759.0, 200.5, 39.0, 22.0 ],
-					"style" : "",
-					"text" : "close"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-19",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 697.0, 200.5, 37.0, 22.0 ],
-					"style" : "",
-					"text" : "open"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-8",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 681.5, 236.5, 47.0, 22.0 ],
-					"style" : "",
-					"text" : "jit.grab"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"linecount" : 3,
+					"id" : "obj-31",
+					"linecount" : 30,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 671.0, 136.0, 150.0, 47.0 ],
+					"patching_rect" : [ 24.5, 107.0, 221.0, 409.0 ],
 					"style" : "",
-					"text" : "try w. live video and use your hand over your camera"
+					"text" : "a common computer vision technique in making interactive systems is called blob detection or blob tracking. This CV algorithm uses a kernal based operation to try to distinguish groups of adjacent pixels as individuals, which are called blobs. \n\nThere are some tasks which can only realistically be done with blob tracking. For the purposes of this course, we will want to avoid them, and avoid situations which necessitate blob tracking. \n\nThere are both philosophical and mathematical objections to tokenizing of the body and the emphasis on static objects or individuals which is implicit in blob tracking. In other words, Blob is a discretization not in time or sensor data about movement but rather sensor data about stuff . We prefer instead to think and work in terms of processes, relations, and individuations. But, there are logistical reasons too. Play the circletest.mov and watch the two circles interact. when the two disks near each other, the algorithm briefly views them as one blob. \n"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 442.0, 376.0, 50.0, 22.0 ],
+					"style" : "",
+					"text" : "ti.nrev~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 287.0, 142.5, 137.0, 22.0 ],
+					"style" : "",
+					"text" : "cv.jit.resize @dim 80 60"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 521.0, 337.0, 248.0, 163.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 9.0,
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 287.0, 212.0, 221.0, 19.0 ],
+					"style" : "",
+					"text" : "cv.jit.label @dim 80 60 @charmode 1 @threshold 22"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 9.0,
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 321.0, 284.0, 132.0, 19.0 ],
+					"style" : "",
+					"text" : "cv.jit.blobs.centroids.draw"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 9.0,
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 287.0, 253.0, 106.0, 19.0 ],
+					"style" : "",
+					"text" : "cv.jit.blobs.centroids"
 				}
 
 			}
@@ -136,7 +140,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 417.5, 186.0, 190.0, 23.0 ],
+					"patching_rect" : [ 287.0, 26.0, 190.0, 23.0 ],
 					"size" : 2.0,
 					"style" : ""
 				}
@@ -149,36 +153,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 417.5, 223.0, 48.0, 22.0 ],
+					"patching_rect" : [ 287.0, 63.0, 48.0, 22.0 ],
 					"style" : "",
 					"text" : "rate $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-51",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 281.5, 289.0, 146.0, 22.0 ],
-					"style" : "",
-					"text" : "jit.+"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-34",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 280.5, 393.0, 153.0, 22.0 ],
-					"style" : "",
-					"text" : "cv.jit.resize @size 160 120",
-					"varname" : "resize"
 				}
 
 			}
@@ -212,7 +189,7 @@
 									"autostart" : [ 1 ],
 									"unique" : [ 0 ],
 									"srcrect" : [ 0, 0, 1, 1 ],
-									"rate" : [ 0.374713 ],
+									"rate" : [ 1.901533 ],
 									"usedstrect" : [ 0 ],
 									"loopreport" : [ 0 ],
 									"time" : [ 0 ],
@@ -230,7 +207,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "", "dictionary" ],
-					"patching_rect" : [ 417.5, 254.0, 152.0, 29.0 ],
+					"patching_rect" : [ 287.0, 94.0, 152.0, 29.0 ],
 					"style" : ""
 				}
 
@@ -240,24 +217,11 @@
 					"id" : "obj-45",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 280.5, 427.0, 173.0, 22.0 ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 287.0, 337.0, 174.0, 22.0 ],
 					"style" : "",
-					"text" : "poly~ video_synth 7 @target 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
-					"linecount" : 14,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 27.5, 167.0, 228.0, 208.0 ],
-					"style" : "",
-					"text" : "just for fun, we can add together these movie files so we get a more interesting sonic texture in this demo. you can change the rate to vary the texture. In our actually projects, these would likely be replaced with a camera feed. \n\nHere we take the synth from the last patch and bundle it up inside a poly~ so can process different synthesize voices simultaneously. \n\nLook inside the poly~ video_synth patch to see how we are processing the video.\n"
+					"text" : "poly~ blob_synth 24 @target 0"
 				}
 
 			}
@@ -290,7 +254,7 @@
 									"autostart" : [ 1 ],
 									"unique" : [ 0 ],
 									"srcrect" : [ 0, 0, 1, 1 ],
-									"rate" : [ 0.60728 ],
+									"rate" : [ 0.683525 ],
 									"usedstrect" : [ 0 ],
 									"loopreport" : [ 0 ],
 									"time" : [ 0 ],
@@ -308,7 +272,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "", "dictionary" ],
-					"patching_rect" : [ 281.5, 115.0, 150.0, 30.0 ],
+					"patching_rect" : [ 543.5, 94.0, 150.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -320,7 +284,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 280.5, 466.0, 50.0, 22.0 ],
+					"patching_rect" : [ 287.0, 376.0, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "ti.nrev~"
 				}
@@ -335,7 +299,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 281.5, 40.0, 190.0, 23.0 ],
+					"patching_rect" : [ 543.5, 26.0, 190.0, 23.0 ],
 					"size" : 2.0,
 					"style" : ""
 				}
@@ -348,7 +312,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 281.5, 77.0, 48.0, 22.0 ],
+					"patching_rect" : [ 543.5, 63.0, 48.0, 22.0 ],
 					"style" : "",
 					"text" : "rate $1"
 				}
@@ -356,26 +320,15 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "jit.pwindow",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 485.0, 400.0, 241.0, 182.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontsize" : 18.0,
 					"id" : "obj-61",
-					"linecount" : 5,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 27.5, 44.0, 228.0, 107.0 ],
+					"patching_rect" : [ 17.5, 26.0, 228.0, 67.0 ],
 					"style" : "",
-					"text" : "Lesson 1: continuous vs. discrete \n\n1.b.2.\nwhat else can we do?"
+					"text" : "Lesson 2: motion\n\n2a3 Blobs"
 				}
 
 			}
@@ -385,7 +338,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 280.5, 504.0, 45.0, 45.0 ],
+					"patching_rect" : [ 287.0, 431.0, 75.0, 75.0 ],
 					"style" : ""
 				}
 
@@ -397,7 +350,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 281.5, 365.0, 73.0, 22.0 ],
+					"patching_rect" : [ 287.0, 176.0, 73.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.rgb2luma"
 				}
@@ -406,16 +359,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 1 ],
-					"order" : 0,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
-					"order" : 1,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -429,51 +373,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-51", 0 ],
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-18", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-33", 0 ],
-					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"order" : 0,
-					"source" : [ "obj-34", 0 ]
+					"destination" : [ "obj-29", 1 ],
+					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -481,7 +396,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"order" : 1,
-					"source" : [ "obj-34", 0 ]
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"order" : 0,
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -494,15 +424,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-51", 1 ],
-					"source" : [ "obj-49", 0 ]
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-45", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-51", 0 ]
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-49", 0 ]
 				}
 
 			}
@@ -529,14 +459,23 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 1 ],
+					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-34", 0 ],
+					"destination" : [ "obj-4", 0 ],
+					"order" : 1,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 1 ],
+					"order" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -556,9 +495,16 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "video_synth.maxpat",
+				"name" : "blob_synth.maxpat",
 				"bootpath" : "~/Documents/ASU/2018_SUMMER/AME598-responsive-environments/design-strategies",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pan2.maxpat",
+				"bootpath" : "/Users/Shared/Max 7/Examples/spatialization/panning/lib",
+				"patcherrelativepath" : "../../../../../../Shared/Max 7/Examples/spatialization/panning/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -568,6 +514,21 @@
 				"patcherrelativepath" : "../../../../Max 7/Packages/SC/media/sc.charges/video",
 				"type" : "MooV",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "cv.jit.blobs.centroids.draw.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/cv.jit/patchers",
+				"patcherrelativepath" : "../../../../Max 7/Packages/cv.jit/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cv.jit.blobs.centroids.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "cv.jit.label.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "cv.jit.resize.mxo",
