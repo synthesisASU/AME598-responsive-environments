@@ -20,7 +20,7 @@
 		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
+		"toolbarvisible" : 0,
 		"lefttoolbarpinned" : 0,
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
@@ -46,7 +46,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 106.583313, 369.0, 106.0, 94.0 ],
-					"presentation_rect" : [ 151.999939, 374.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "this is called frame differencing (see Julian's examples)"
 				}
@@ -178,7 +177,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 159.999939, 168.0, 100.0, 111.0 ],
-					"presentation_rect" : [ 262.833313, 234.5, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "there is a new event every time a pixel changes a value"
 				}
@@ -189,12 +187,11 @@
 					"bubble" : 1,
 					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-22",
-					"linecount" : 7,
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 454.666687, 209.5, 199.0, 128.0 ],
-					"presentation_rect" : [ 478.666687, 216.0, 0.0, 0.0 ],
+					"patching_rect" : [ 454.666687, 209.5, 201.0, 111.0 ],
 					"style" : "",
 					"text" : "what is the resolution of events per second using this method? the high resolution of the sonic clouds here is the result of a technique called granular synthesis "
 				}
@@ -292,7 +289,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 106.583313, 234.0, 39.0, 22.0 ],
+					"patching_rect" : [ 106.583313, 258.5, 39.0, 22.0 ],
 					"style" : "",
 					"text" : "close"
 				}
@@ -507,25 +504,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-70",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 25.333321, 332.0, 165.0, 22.0 ],
-					"style" : "",
-					"text" : "jit.matrix downsize 1 char 8 6"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-71",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 25.333321, 300.0, 73.0, 22.0 ],
+					"patching_rect" : [ 25.333321, 324.5, 73.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.rgb2luma"
 				}
@@ -538,7 +522,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 25.333321, 139.0, 60.0, 22.0 ],
+					"patching_rect" : [ 25.333321, 163.5, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -551,7 +535,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "open" ],
-					"patching_rect" : [ 25.333321, 168.0, 58.0, 22.0 ],
+					"patching_rect" : [ 25.333321, 192.5, 58.0, 22.0 ],
 					"style" : "",
 					"text" : "t 1 open"
 				}
@@ -564,7 +548,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 25.333321, 234.0, 58.0, 22.0 ],
+					"patching_rect" : [ 25.333321, 258.5, 58.0, 22.0 ],
 					"style" : "",
 					"text" : "metro 33"
 				}
@@ -578,7 +562,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 25.333321, 197.0, 24.0, 24.0 ],
+					"patching_rect" : [ 25.333321, 221.5, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -590,9 +574,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 25.333321, 269.0, 47.0, 22.0 ],
+					"patching_rect" : [ 25.333321, 293.5, 67.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.grab"
+					"text" : "jit.grab 8 6"
 				}
 
 			}
@@ -975,13 +959,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-76", 0 ],
-					"source" : [ "obj-70", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-70", 0 ],
 					"source" : [ "obj-71", 0 ]
 				}
 

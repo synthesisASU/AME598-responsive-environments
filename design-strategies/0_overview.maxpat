@@ -40,13 +40,13 @@
 				"box" : 				{
 					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-10",
-					"linecount" : 4,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 28.0, 513.0, 359.0, 74.0 ],
+					"patching_rect" : [ 28.0, 471.0, 530.0, 141.0 ],
 					"style" : "",
-					"text" : "depencies: \n>Max for the Visual Arts (package manager)\n>SC (https://github.com/Synthesis-ASU-TML/SC)\n>cv.jit (package manager) "
+					"text" : "depencies: \n>Max for the Visual Arts (package manager)\n>SC (https://github.com/Synthesis-ASU-TML/SC)\n>cv.jit (package manager) \n>BACH (package manager)\n>odot (https://github.com/CNMAT/CNMAT-odot/releases/download/v1.2/odot-Max-MacOSX-v1.2-0-g98a4d14-master.tgz)"
 				}
 
 			}
@@ -189,7 +189,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 267.0, 461.0, 150.0, 20.0 ],
+					"patching_rect" : [ 330.0, 316.202179, 47.0, 20.0 ],
 					"style" : "",
 					"text" : "MIDI"
 				}
@@ -201,7 +201,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 418.0, 522.0, 150.0, 20.0 ],
+					"patching_rect" : [ 379.0, 397.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "machinic, non-human"
 				}
@@ -213,7 +213,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 432.0, 476.0, 156.0, 20.0 ],
+					"patching_rect" : [ 221.0, 397.0, 156.0, 20.0 ],
 					"style" : "",
 					"text" : "human agent , mechanical "
 				}
@@ -225,7 +225,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 432.0, 500.0, 150.0, 20.0 ],
+					"patching_rect" : [ 476.0, 353.0, 61.0, 20.0 ],
 					"style" : "",
 					"text" : "statistics "
 				}
@@ -238,7 +238,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 425.0, 568.0, 150.0, 47.0 ],
+					"patching_rect" : [ 101.0, 335.0, 150.0, 47.0 ],
 					"style" : "",
 					"text" : "computation: boolean, if/then, (script), data structure "
 				}
@@ -249,11 +249,11 @@
 					"fontname" : "Gujarati Sangam MN",
 					"fontsize" : 12.0,
 					"id" : "obj-29",
-					"linecount" : 31,
+					"linecount" : 30,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 570.0, 83.858475, 611.0, 527.0 ],
+					"patching_rect" : [ 570.0, 83.858475, 615.0, 510.0 ],
 					"style" : "",
 					"text" : "“How do we build an experiential media system?”\n\nAt the end of the course, you will have furnished answers to this question through your own engagement through applied projects. \n\nBut it’s probably already clear that we cannot sufficiently address the 'how' in this question by dissecting a given system and building abstract models to explain technical components. Further, what is missing from the “how” may be glossed over as compositional style or artistry. Or we may refer to the system as the deterministic outcome of addressing our logistical or site-specific questions (what do we want to sense, what are people doing, how are the acoustics/lighting conditions, etc.). But something precedes an individual’s artistic style or the limitations of a specific project: the presuppositions and axioms which guide both the technical and artistic hands. We may call a bundle of these presuppositions a method, a framework, and ethos; here will refer to them as sets of techniques. \n\nIn other words, it’s necessary to go beyond understanding the nuts and bolts of the iStage or the building blocks of the Max/MSP/Jitter programing environment. This set of tutorials set out to illustrate one attitude towards media, which attempts to avoid the holes certain potholes catch up artists and developers all too often. We characterize our set of techniques here as responsive media. A responsive approach to media composition treats sound, light, and video as attunable textural fields which reflect and diffract aspects of experience which may not otherwise be visible, observable, or measurable. A central characteristic of this compositional approach is the use of continuous processing of sensor data towards continuous media output. \n\nWe set this here against “interactive” approaches. See the table on the left for some examples.  This interactive framework is synthesized from various artworks, trends and approaches and in this sense is admittedly a strawman, but we hope that it will serve a pedagogical foil indicating the ways in which A) discretizing can occlude, reduce, and over-simplify the phenomena of interest, and B) labeling and categorizing according to pre-given schema will create code which is overfitted to a particular understanding of static phenomena which is insufficient to the processual phenomena. \n"
 				}
