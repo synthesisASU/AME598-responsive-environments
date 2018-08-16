@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 63.0, 100.0, 1090.0, 700.0 ],
+		"rect" : [ 29.0, 66.0, 1158.0, 768.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,95 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 59.0, 1126.202148, 60.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 59.0, 1156.202148, 113.0, 22.0 ],
+					"style" : "",
+					"text" : "toolbarvisible 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.595187,
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 59.0, 1188.202148, 132.0, 21.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"style" : "",
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
+					"id" : "obj-16",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 338.0, 1067.0, 509.0, 57.0 ],
+					"style" : "",
+					"text" : "prepared for AME494/AME598 \nresponsive media enviroments \nFall 2018, Synthesis Center ",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"border" : 4,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"grad1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+					"grad2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"id" : "obj-17",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 29.0, 1042.0, 818.0, 4.0 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
+					"id" : "obj-18",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 29.0, 1059.0, 369.0, 57.0 ],
+					"style" : "",
+					"text" : "questions, comments, suggestions welcome:  garrett.l.johnson@asu.edu\n\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-6",
@@ -46,30 +135,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 352.0, 520.0, 128.0, 78.0 ],
-					"presentation_rect" : [ 346.25, 538.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "note the different uses of scale in parts of the patch"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"#init" : "",
-					"#loadbang" : 0,
-					"#triggerall" : 0,
-					"#untuple" : 0,
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"ftm_objref_conv" : 0,
-					"ftm_scope" : 3,
-					"id" : "obj-22",
-					"maxclass" : "ftm.mess",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 254.0, 32.0, 66.011719, 18.0 ],
-					"presentation_rect" : [ 254.0, 32.0, 66.011719, 18.0 ]
 				}
 
 			}
@@ -83,7 +150,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 13.0, 96.5, 397.5, 32.0 ],
 					"style" : "",
-					"text" : "1a2: audio thresholding w. midi continued"
+					"text" : "1a4: audio thresholding w. midi continued"
 				}
 
 			}
@@ -241,11 +308,12 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-147",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 252.5, 294.10614, 150.0, 20.0 ],
+					"patching_rect" : [ 252.5, 294.10614, 192.0, 23.0 ],
 					"style" : "",
 					"text" : "ATTACK"
 				}
@@ -326,12 +394,13 @@
 , 			{
 				"box" : 				{
 					"bubble" : 1,
+					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-141",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 545.5, 361.5, 147.5, 37.0 ],
+					"patching_rect" : [ 545.5, 361.5, 156.0, 44.0 ],
 					"style" : "",
 					"text" : "add 48 to put in suitable MIDI range"
 				}
@@ -398,12 +467,13 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-132",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 847.5, 329.125, 67.0, 33.0 ],
+					"patching_rect" : [ 847.5, 329.125, 71.0, 40.0 ],
 					"style" : "",
 					"text" : "Threhold/ Trigger"
 				}
@@ -411,11 +481,12 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-130",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 395.0, 690.0, 71.0, 20.0 ],
+					"patching_rect" : [ 395.0, 690.0, 86.0, 23.0 ],
 					"style" : "",
 					"text" : "DECAY"
 				}
@@ -989,13 +1060,14 @@
 , 			{
 				"box" : 				{
 					"bubble" : 1,
+					"bubbleside" : 3,
 					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-2",
 					"linecount" : 21,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 166.625, 200.0, 363.0 ],
+					"patching_rect" : [ 13.0, 166.625, 201.0, 363.0 ],
 					"style" : "",
 					"text" : "we can make the previous example more elaborate and take advantage of this synthesizers control parameters to make it more expressive. Here we use the slide object to transform our amplitude data stream into streams which are suitable for different parameters of synthesis. we create different mappings for the different stages of the sonic envelope (ADSR).\n\nIn particular, this patch maps Attack and decay.  https://en.wikipedia.org/wiki/Synthesizer#Attack_Decay_Sustain_Release_(ADSR)_envelope"
 				}
@@ -1197,6 +1269,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-136", 0 ],
 					"source" : [ "obj-133", 0 ]
 				}
@@ -1389,6 +1468,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-103", 2 ],
 					"source" : [ "obj-98", 0 ]
 				}
@@ -1404,9 +1490,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-152" : [ "DECAY[1]", "ATTACK", 0 ],
 			"obj-103" : [ "amxd~[2]", "amxd~[1]", 0 ],
 			"obj-110" : [ "DECAY", "DECAY", 0 ],
+			"obj-152" : [ "DECAY[1]", "ATTACK", 0 ],
 			"obj-28" : [ "amxd~[1]", "amxd~[1]", 0 ],
 			"obj-128" : [ "live.dial[1]", "VELOCITY", 0 ]
 		}
@@ -1442,10 +1528,6 @@
 				"name" : "pluggo.voiceExclude.maxpat",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "ftm.mess.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,

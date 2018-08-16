@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 89.0, 44.0, 745.0, 802.0 ],
+		"rect" : [ 142.0, 79.0, 745.0, 695.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,55 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 43.0, 914.202148, 60.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 43.0, 944.202148, 113.0, 22.0 ],
+					"style" : "",
+					"text" : "toolbarvisible 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.595187,
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 43.0, 976.202148, 132.0, 21.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"style" : "",
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-5",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 322.0, 847.0, 509.0, 57.0 ],
+					"patching_rect" : [ 205.0, 847.0, 509.0, 57.0 ],
 					"style" : "",
 					"text" : "prepared for AME494/AME598 \nresponsive media enviroments \nFall 2018, Synthesis Center ",
 					"textjustification" : 2
@@ -93,8 +135,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 415.5, 325.0, 333.0, 330.0 ],
-					"presentation_rect" : [ 347.5, 511.0, 0.0, 0.0 ],
+					"patching_rect" : [ 415.5, 325.0, 335.0, 330.0 ],
 					"style" : "",
 					"text" : "Instead of using a simple oscilator and envelope generator, this patch uses a more robust bpatcher-wrapped frequency modulation synth designed to emulate a bell sound. \n\nThis synth accepts MIDI formated messages. MIDI was developed as a protocol to facilitate easy exchange between digitial synthesizers and musical instruments. MIDI messages are in some ways analogous to notes of Western sheet music; the sonic texture is characterized by a pitch (usually equap tempered), a velocity (a hold over from digital pianos), and a duration. \nmore here: https://en.wikipedia.org/wiki/MIDI\n\nNote how the MIDI synth works very easily with the sensor data formed into event-based control messages. Keep this in mind as we start to look to more continuous sensor data."
 				}
@@ -493,6 +534,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-15", 0 ]
 				}
@@ -616,6 +664,13 @@
 					"destination" : [ "obj-67", 0 ],
 					"order" : 1,
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}

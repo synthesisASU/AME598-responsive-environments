@@ -39,6 +39,20 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Gujarati Sangam MN",
+					"id" : "obj-10",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 28.0, 513.0, 359.0, 74.0 ],
+					"style" : "",
+					"text" : "depencies: \n>Max for the Visual Arts (package manager)\n>SC (https://github.com/Synthesis-ASU-TML/SC)\n>cv.jit (package manager) "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-16",
 					"linecount" : 3,
 					"maxclass" : "comment",
@@ -64,7 +78,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 28.0, 621.0, 1151.0, 4.0 ],
-					"presentation_rect" : [ 24.0, 621.0, 0.0, 0.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -240,7 +253,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 570.0, 83.858475, 609.0, 527.0 ],
+					"patching_rect" : [ 570.0, 83.858475, 611.0, 527.0 ],
 					"style" : "",
 					"text" : "“How do we build an experiential media system?”\n\nAt the end of the course, you will have furnished answers to this question through your own engagement through applied projects. \n\nBut it’s probably already clear that we cannot sufficiently address the 'how' in this question by dissecting a given system and building abstract models to explain technical components. Further, what is missing from the “how” may be glossed over as compositional style or artistry. Or we may refer to the system as the deterministic outcome of addressing our logistical or site-specific questions (what do we want to sense, what are people doing, how are the acoustics/lighting conditions, etc.). But something precedes an individual’s artistic style or the limitations of a specific project: the presuppositions and axioms which guide both the technical and artistic hands. We may call a bundle of these presuppositions a method, a framework, and ethos; here will refer to them as sets of techniques. \n\nIn other words, it’s necessary to go beyond understanding the nuts and bolts of the iStage or the building blocks of the Max/MSP/Jitter programing environment. This set of tutorials set out to illustrate one attitude towards media, which attempts to avoid the holes certain potholes catch up artists and developers all too often. We characterize our set of techniques here as responsive media. A responsive approach to media composition treats sound, light, and video as attunable textural fields which reflect and diffract aspects of experience which may not otherwise be visible, observable, or measurable. A central characteristic of this compositional approach is the use of continuous processing of sensor data towards continuous media output. \n\nWe set this here against “interactive” approaches. See the table on the left for some examples.  This interactive framework is synthesized from various artworks, trends and approaches and in this sense is admittedly a strawman, but we hope that it will serve a pedagogical foil indicating the ways in which A) discretizing can occlude, reduce, and over-simplify the phenomena of interest, and B) labeling and categorizing according to pre-given schema will create code which is overfitted to a particular understanding of static phenomena which is insufficient to the processual phenomena. \n"
 				}

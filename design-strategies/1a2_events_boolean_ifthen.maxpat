@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 165.0, 44.0, 881.0, 763.0 ],
+		"rect" : [ 165.0, 45.0, 881.0, 763.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -20,7 +20,7 @@
 		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
+		"toolbarvisible" : 0,
 		"lefttoolbarpinned" : 0,
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
@@ -38,27 +38,6 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"#init" : "",
-					"#loadbang" : 0,
-					"#triggerall" : 0,
-					"#untuple" : 0,
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"ftm_objref_conv" : 0,
-					"ftm_scope" : 3,
-					"id" : "obj-22",
-					"maxclass" : "ftm.mess",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 254.0, 32.0, 66.011719, 18.0 ],
-					"presentation_rect" : [ 254.0, 32.0, 66.011719, 18.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bubble" : 1,
 					"bubblepoint" : 0.22,
 					"bubbleside" : 0,
@@ -68,7 +47,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 375.0, 200.0, 115.0, 177.0 ],
+					"patching_rect" : [ 375.0, 200.0, 119.0, 177.0 ],
 					"style" : "",
 					"text" : " A more familiar way to code this up would be a Boolean If/then, in which our code would wait to act until a given conditional was met. "
 				}
@@ -134,7 +113,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 20.0, 543.0, 819.0, 121.0 ],
-					"presentation_rect" : [ 38.0, 555.0, 0.0, 0.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -236,7 +214,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 35.0, 556.0, 795.0, 90.0 ],
+					"patching_rect" : [ 35.0, 556.0, 797.0, 90.0 ],
 					"style" : "",
 					"text" : "a central weakness in this approach is determining how high or low to set the threshold. There are more or less elegant solutions to this problem, but this technical issue is belied by a more philosophical point: we cannot define the event in advance. \n\nfurthermore, we don't need to conserve processing power in this way. Additionally, since Max is working with video and audio at high temporal resolutions, we want to take advantage of the continuous flow of data. "
 				}
@@ -264,7 +242,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 132.5, 246.0, 170.0, 162.0 ],
+					"patching_rect" : [ 132.5, 246.0, 171.0, 162.0 ],
 					"style" : "",
 					"text" : "this threshold/trigger approach resembles some techniques from more traditional coding environments, in which one may aim for preserve a scarcity of events  in the name of efficiency."
 				}
@@ -543,31 +521,31 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u566000540" ],
 									"dim" : [ 1, 1 ],
-									"usesrcrect" : [ 0 ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"loopstart" : [ 0 ],
-									"interp" : [ 0 ],
-									"output_texture" : [ 0 ],
-									"time_secs" : [ 0.0 ],
 									"loopend" : [ 0 ],
+									"autostart" : [ 1 ],
+									"framereport" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
 									"colormode" : [ "argb" ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"looppoints" : [ 0, 0 ],
+									"loopstart" : [ 0 ],
+									"automatic" : [ 0 ],
+									"rate" : [ 1.0 ],
 									"adapt" : [ 1 ],
 									"moviefile" : [ "" ],
 									"position" : [ 0.0 ],
-									"automatic" : [ 0 ],
+									"output_texture" : [ 0 ],
 									"engine" : [ "avf" ],
 									"vol" : [ 1.0 ],
-									"texture_name" : [ "u377000538" ],
-									"autostart" : [ 1 ],
-									"unique" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"rate" : [ 1.0 ],
 									"usedstrect" : [ 0 ],
-									"loopreport" : [ 0 ],
-									"time" : [ 0 ],
+									"unique" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"texture_name" : [ "u377000538" ],
 									"drawto" : [ "" ],
-									"framereport" : [ 0 ],
-									"looppoints" : [ 0, 0 ]
+									"interp" : [ 0 ],
+									"time" : [ 0 ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
@@ -751,10 +729,6 @@
 				"patcherrelativepath" : "../../../../Max 7/Packages/Max for the Visual Arts/media/Video",
 				"type" : "MooV",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "ftm.mess.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0

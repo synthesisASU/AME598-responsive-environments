@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 406.0, 97.0, 954.0, 710.0 ],
+		"rect" : [ 322.0, 112.0, 723.0, 710.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,147 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 533.0, 762.202148, 66.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 533.0, 792.202148, 113.0, 22.0 ],
+					"style" : "",
+					"text" : "toolbarvisible 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.595187,
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 533.0, 824.202148, 132.0, 21.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"style" : "",
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
+					"id" : "obj-28",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 98.5, 685.0, 567.0, 57.0 ],
+					"style" : "",
+					"text" : "prepared for AME494/AME598 \nresponsive media enviroments \nFall 2018, Synthesis Center ",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"border" : 4,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"grad1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+					"grad2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"id" : "obj-31",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 27.5, 668.0, 642.0, 4.0 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
+					"id" : "obj-32",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 27.5, 685.0, 427.0, 57.0 ],
+					"style" : "",
+					"text" : "questions, comments, suggestions welcome:  garrett.l.johnson@asu.edu\n\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
+					"fontsize" : 18.0,
+					"id" : "obj-14",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 28.5, 104.5, 565.0, 32.0 ],
+					"style" : "",
+					"text" : "1.b.2. continuous transduction from video to sound, cont."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"border" : 4,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"grad1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+					"grad2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"id" : "obj-15",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 28.5, 90.0, 658.0, 4.0 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Gujarati Sangam MN",
+					"fontsize" : 36.0,
+					"id" : "obj-16",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 28.5, 23.0, 658.0, 57.0 ],
+					"style" : "",
+					"text" : "Lesson 1 // continuous vs. discrete "
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 281.5, 330.0, 29.5, 22.0 ],
+					"patching_rect" : [ 28.5, 433.0, 251.5, 22.0 ],
 					"style" : "",
 					"text" : "jit.*"
 				}
@@ -56,7 +191,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 637.0, 196.5, 58.0, 22.0 ],
+					"patching_rect" : [ 261.0, 353.5, 58.0, 22.0 ],
 					"style" : "",
 					"text" : "metro 33"
 				}
@@ -70,7 +205,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 641.0, 165.5, 24.0, 24.0 ],
+					"patching_rect" : [ 261.0, 321.5, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -82,7 +217,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 759.0, 200.5, 39.0, 22.0 ],
+					"patching_rect" : [ 378.0, 357.0, 39.0, 22.0 ],
 					"style" : "",
 					"text" : "close"
 				}
@@ -95,7 +230,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 697.0, 200.5, 37.0, 22.0 ],
+					"patching_rect" : [ 330.0, 357.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "open"
 				}
@@ -108,7 +243,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 681.5, 236.5, 47.0, 22.0 ],
+					"patching_rect" : [ 261.0, 392.0, 47.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.grab"
 				}
@@ -116,12 +251,16 @@
 			}
 , 			{
 				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.13,
+					"bubbleside" : 0,
+					"fontname" : "Gujarati Sangam MN",
 					"id" : "obj-2",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 671.0, 136.0, 150.0, 47.0 ],
+					"patching_rect" : [ 330.0, 406.0, 143.0, 76.0 ],
 					"style" : "",
 					"text" : "try w. live video and use your hand over your camera"
 				}
@@ -136,7 +275,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 417.5, 186.0, 190.0, 23.0 ],
+					"patching_rect" : [ 60.5, 285.5, 190.0, 23.0 ],
 					"size" : 2.0,
 					"style" : ""
 				}
@@ -149,7 +288,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 417.5, 223.0, 48.0, 22.0 ],
+					"patching_rect" : [ 60.5, 322.5, 48.0, 22.0 ],
 					"style" : "",
 					"text" : "rate $1"
 				}
@@ -162,7 +301,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 281.5, 289.0, 146.0, 22.0 ],
+					"patching_rect" : [ 28.5, 392.0, 51.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.+"
 				}
@@ -175,7 +314,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 280.5, 393.0, 153.0, 22.0 ],
+					"patching_rect" : [ 27.5, 496.0, 153.0, 22.0 ],
 					"style" : "",
 					"text" : "cv.jit.resize @size 160 120",
 					"varname" : "resize"
@@ -194,31 +333,31 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u594000478" ],
 									"dim" : [ 1, 1 ],
-									"usesrcrect" : [ 0 ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"loopstart" : [ 0 ],
-									"interp" : [ 0 ],
-									"output_texture" : [ 0 ],
-									"time_secs" : [ 0.0 ],
 									"loopend" : [ 0 ],
+									"autostart" : [ 1 ],
+									"framereport" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
 									"colormode" : [ "argb" ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"looppoints" : [ 0, 0 ],
+									"loopstart" : [ 0 ],
+									"automatic" : [ 0 ],
+									"rate" : [ 0.374713 ],
 									"adapt" : [ 1 ],
 									"moviefile" : [ "" ],
 									"position" : [ 0.0 ],
-									"automatic" : [ 0 ],
+									"output_texture" : [ 0 ],
 									"engine" : [ "avf" ],
 									"vol" : [ 1.0 ],
-									"texture_name" : [ "u892000476" ],
-									"autostart" : [ 1 ],
-									"unique" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"rate" : [ 0.374713 ],
 									"usedstrect" : [ 0 ],
-									"loopreport" : [ 0 ],
-									"time" : [ 0 ],
+									"unique" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"texture_name" : [ "u892000476" ],
 									"drawto" : [ "" ],
-									"framereport" : [ 0 ],
-									"looppoints" : [ 0, 0 ]
+									"interp" : [ 0 ],
+									"time" : [ 0 ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
@@ -230,7 +369,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "", "dictionary" ],
-					"patching_rect" : [ 417.5, 254.0, 152.0, 29.0 ],
+					"patching_rect" : [ 60.5, 353.5, 152.0, 29.0 ],
 					"style" : ""
 				}
 
@@ -242,7 +381,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 280.5, 427.0, 173.0, 22.0 ],
+					"patching_rect" : [ 27.5, 530.0, 173.0, 22.0 ],
 					"style" : "",
 					"text" : "poly~ video_synth 7 @target 0"
 				}
@@ -250,14 +389,17 @@
 			}
 , 			{
 				"box" : 				{
+					"bubble" : 1,
+					"fontname" : "Gujarati Sangam MN",
+					"fontsize" : 10.0,
 					"id" : "obj-20",
 					"linecount" : 14,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 27.5, 167.0, 228.0, 208.0 ],
+					"patching_rect" : [ 295.0, 139.5, 304.0, 206.0 ],
 					"style" : "",
-					"text" : "just for fun, we can add together these movie files so we get a more interesting sonic texture in this demo. you can change the rate to vary the texture. In our actually projects, these would likely be replaced with a camera feed. \n\nHere we take the synth from the last patch and bundle it up inside a poly~ so can process different synthesize voices simultaneously. \n\nLook inside the poly~ video_synth patch to see how we are processing the video.\n"
+					"text" : "just for fun, we can add together these movie files so we get a more interesting sonic texture in this demo. you can change the rate to vary the texture. In our actually projects, these would likely be replaced with a camera feed (you can try that too, but we may want to use another analysis method beside greyscale average pixel. \n\nHere we take the synth from the last patch and bundle it up inside a poly~ so can process different synthesize voices simultaneously. \n\nLook inside the poly~ video_synth patch to see how we are processing the video.\n"
 				}
 
 			}
@@ -272,31 +414,31 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u594000478" ],
 									"dim" : [ 1, 1 ],
-									"usesrcrect" : [ 0 ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"loopstart" : [ 0 ],
-									"interp" : [ 0 ],
-									"output_texture" : [ 0 ],
-									"time_secs" : [ 0.0 ],
 									"loopend" : [ 0 ],
+									"autostart" : [ 1 ],
+									"framereport" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
 									"colormode" : [ "argb" ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"looppoints" : [ 0, 0 ],
+									"loopstart" : [ 0 ],
+									"automatic" : [ 0 ],
+									"rate" : [ 0.60728 ],
 									"adapt" : [ 1 ],
 									"moviefile" : [ "" ],
 									"position" : [ 0.0 ],
-									"automatic" : [ 0 ],
+									"output_texture" : [ 0 ],
 									"engine" : [ "avf" ],
 									"vol" : [ 1.0 ],
-									"texture_name" : [ "u892000476" ],
-									"autostart" : [ 1 ],
-									"unique" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"rate" : [ 0.60728 ],
 									"usedstrect" : [ 0 ],
-									"loopreport" : [ 0 ],
-									"time" : [ 0 ],
+									"unique" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"texture_name" : [ "u892000476" ],
 									"drawto" : [ "" ],
-									"framereport" : [ 0 ],
-									"looppoints" : [ 0, 0 ]
+									"interp" : [ 0 ],
+									"time" : [ 0 ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
@@ -308,7 +450,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "", "dictionary" ],
-					"patching_rect" : [ 281.5, 115.0, 150.0, 30.0 ],
+					"patching_rect" : [ 28.5, 239.0, 150.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -320,7 +462,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 280.5, 466.0, 50.0, 22.0 ],
+					"patching_rect" : [ 27.5, 569.0, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "ti.nrev~"
 				}
@@ -335,7 +477,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 281.5, 40.0, 190.0, 23.0 ],
+					"patching_rect" : [ 28.5, 164.0, 190.0, 23.0 ],
 					"size" : 2.0,
 					"style" : ""
 				}
@@ -348,7 +490,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 281.5, 77.0, 48.0, 22.0 ],
+					"patching_rect" : [ 28.5, 201.0, 48.0, 22.0 ],
 					"style" : "",
 					"text" : "rate $1"
 				}
@@ -361,21 +503,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 485.0, 400.0, 241.0, 182.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 18.0,
-					"id" : "obj-61",
-					"linecount" : 5,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 27.5, 44.0, 228.0, 107.0 ],
-					"style" : "",
-					"text" : "Lesson 1: continuous vs. discrete \n\n1.b.2.\nwhat else can we do?"
+					"patching_rect" : [ 226.0, 480.0, 94.0, 72.0 ]
 				}
 
 			}
@@ -385,7 +513,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 280.5, 504.0, 45.0, 45.0 ],
+					"patching_rect" : [ 27.5, 607.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -397,7 +525,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 281.5, 365.0, 73.0, 22.0 ],
+					"patching_rect" : [ 28.5, 468.0, 73.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.rgb2luma"
 				}
@@ -487,6 +615,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-45", 0 ]
 				}
@@ -496,6 +631,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-51", 1 ],
 					"source" : [ "obj-49", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}

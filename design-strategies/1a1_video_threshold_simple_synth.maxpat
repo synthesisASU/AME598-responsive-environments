@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 232.0, 44.0, 663.0, 752.0 ],
+		"rect" : [ 232.0, 45.0, 694.0, 752.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 80.0, 677.0, 509.0, 57.0 ],
+					"patching_rect" : [ 80.0, 677.0, 584.0, 57.0 ],
 					"style" : "",
 					"text" : "prepared for AME494/AME598 \nresponsive media enviroments \nFall 2018, Synthesis Center ",
 					"textjustification" : 2
@@ -60,7 +60,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 13.0, 86.5, 334.0, 32.0 ],
-					"presentation_rect" : [ 150.0, 177.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "1a1: thresholding + triggering"
 				}
@@ -78,8 +77,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 73.0, 584.0, 4.0 ],
-					"presentation_rect" : [ 25.0, 98.0, 0.0, 0.0 ],
+					"patching_rect" : [ 5.0, 73.0, 663.0, 4.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -111,7 +109,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 9.0, 660.0, 584.0, 4.0 ],
+					"patching_rect" : [ 9.0, 660.0, 659.0, 4.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -138,7 +136,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 163.0, 764.202148, 60.0, 22.0 ],
+					"patching_rect" : [ 19.0, 756.202148, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -151,7 +149,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 163.0, 794.202148, 113.0, 22.0 ],
+					"patching_rect" : [ 19.0, 786.202148, 113.0, 22.0 ],
 					"style" : "",
 					"text" : "toolbarvisible 0"
 				}
@@ -166,7 +164,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 163.0, 826.202148, 132.0, 21.0 ],
+					"patching_rect" : [ 19.0, 818.202148, 132.0, 21.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"style" : "",
 					"text" : "thispatcher"
@@ -476,31 +474,31 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u566000540" ],
 									"dim" : [ 1, 1 ],
-									"usesrcrect" : [ 0 ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"loopstart" : [ 0 ],
-									"interp" : [ 0 ],
-									"output_texture" : [ 0 ],
-									"time_secs" : [ 0.0 ],
 									"loopend" : [ 0 ],
+									"autostart" : [ 1 ],
+									"framereport" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
 									"colormode" : [ "argb" ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"looppoints" : [ 0, 0 ],
+									"loopstart" : [ 0 ],
+									"automatic" : [ 0 ],
+									"rate" : [ 1.0 ],
 									"adapt" : [ 1 ],
 									"moviefile" : [ "" ],
 									"position" : [ 0.0 ],
-									"automatic" : [ 0 ],
+									"output_texture" : [ 0 ],
 									"engine" : [ "avf" ],
 									"vol" : [ 1.0 ],
-									"texture_name" : [ "u377000538" ],
-									"autostart" : [ 1 ],
-									"unique" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"rate" : [ 1.0 ],
 									"usedstrect" : [ 0 ],
-									"loopreport" : [ 0 ],
-									"time" : [ 0 ],
+									"unique" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"texture_name" : [ "u377000538" ],
 									"drawto" : [ "" ],
-									"framereport" : [ 0 ],
-									"looppoints" : [ 0, 0 ]
+									"interp" : [ 0 ],
+									"time" : [ 0 ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
