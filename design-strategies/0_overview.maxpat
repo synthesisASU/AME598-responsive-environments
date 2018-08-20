@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 96.0, 68.0, 891.0, 706.0 ],
+		"rect" : [ 96.0, 68.0, 884.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -271,7 +271,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 28.0, 83.858475, 509.0, 382.343689 ],
-					"pic" : "Macintosh_HD:/Users/Fishes/Desktop/Screen Shot 2018-08-01 at 16.07.19.png"
+					"pic" : "interactive-responsive-chart.png"
 				}
 
 			}
@@ -292,9 +292,9 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "Screen Shot 2018-08-01 at 16.07.19.png",
-				"bootpath" : "~/Desktop",
-				"patcherrelativepath" : "../../../../../Desktop",
+				"name" : "interactive-responsive-chart.png",
+				"bootpath" : "~/Documents/ASU/2018_SUMMER/AME598-responsive-environments/design-strategies",
+				"patcherrelativepath" : ".",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
