@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1852.0, 967.0 ],
+		"rect" : [ 34.0, 34.0, 732.0, 532.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -53,7 +53,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1852.0, 941.0 ],
+						"rect" : [ 0.0, 26.0, 732.0, 506.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -659,7 +659,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 897.0, 462.5, 45.0, 22.0 ],
+									"patching_rect" : [ 897.0, 462.5, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "jit.*"
 								}
@@ -674,9 +674,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 73.5, 164.0, 55.0, 22.0 ],
+									"patching_rect" : [ 73.5, 164.0, 99.0, 22.0 ],
 									"style" : "",
-									"text" : "jit.movie"
+									"text" : "jit.movie @vol 0."
 								}
 
 							}
@@ -22616,7 +22616,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1852.0, 941.0 ],
+						"rect" : [ 0.0, 26.0, 732.0, 506.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -22651,7 +22651,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 46.0, 494.102997, 747.560974, 524.872498 ],
+									"patching_rect" : [ 359.0, 482.039246, 209.186325, 146.872498 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 139.0, 464.0, 629.528015, 442.0 ]
 								}
@@ -22667,32 +22667,6 @@
 									"patching_rect" : [ 792.0, 313.0, 62.0, 22.0 ],
 									"style" : "",
 									"text" : "jit.change"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-5",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 757.0, 108.0, 35.0, 22.0 ],
-									"style" : "",
-									"text" : "read"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-1",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 776.0, 155.0, 55.0, 22.0 ],
-									"style" : "",
-									"text" : "jit.movie"
 								}
 
 							}
@@ -22903,17 +22877,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 166.5, 125.0, 150.0, 22.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-50",
-									"maxclass" : "jit.pwindow",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 1268.527832, 108.0, 312.0, 234.0 ]
 								}
 
 							}
@@ -23307,13 +23270,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-5", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-69", 1 ],
 									"source" : [ "obj-51", 0 ]
 								}
@@ -23416,16 +23372,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-50", 0 ],
-									"order" : 0,
-									"source" : [ "obj-67", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-59", 0 ],
-									"order" : 1,
 									"source" : [ "obj-67", 0 ]
 								}
 
@@ -44960,7 +44907,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 34.0, 105.0, 1852.0, 941.0 ],
+						"rect" : [ 0.0, 26.0, 732.0, 506.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -45410,7 +45357,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1083.0, 623.833374, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "144"
+									"text" : "79"
 								}
 
 							}
@@ -68398,7 +68345,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1852.0, 941.0 ],
+						"rect" : [ 34.0, 60.0, 732.0, 506.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
