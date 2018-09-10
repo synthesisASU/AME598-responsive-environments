@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 34.0, 732.0, 532.0 ],
+		"rect" : [ 59.0, 224.0, 1710.0, 942.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -53,7 +53,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 732.0, 506.0 ],
+						"rect" : [ 0.0, 26.0, 1710.0, 916.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -22616,7 +22616,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 732.0, 506.0 ],
+						"rect" : [ 0.0, 26.0, 1710.0, 916.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -44907,7 +44907,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 732.0, 506.0 ],
+						"rect" : [ 0.0, 26.0, 1710.0, 916.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -68345,7 +68345,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 34.0, 60.0, 732.0, 506.0 ],
+						"rect" : [ 59.0, 250.0, 1710.0, 916.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
