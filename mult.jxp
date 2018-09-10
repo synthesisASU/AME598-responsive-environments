@@ -1,0 +1,8 @@
+<jitterpass>
+	<pass fxname="mult">		
+		<subpass file="op.mult.jxs" >
+			<input source="COLOR" />
+			<input source="TEXTURE0" />
+		</subpass>	
+	</pass>
+</jitterpass>	
