@@ -38,6 +38,58 @@
 		"subpatcher_template" : "Responsive_media_template",
 		"boxes" : [ 			{
 				"box" : 				{
+					"data" : 					{
+						"clips" : [ 							{
+								"filename" : "traffic.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u957001218" ],
+									"dim" : [ 1, 1 ],
+									"interp" : [ 0 ],
+									"rate" : [ 1.0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"colormode" : [ "argb" ],
+									"moviefile" : [ "" ],
+									"position" : [ 0.0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"vol" : [ 1.0 ],
+									"framereport" : [ 0 ],
+									"unique" : [ 0 ],
+									"drawto" : [ "" ],
+									"autostart" : [ 1 ],
+									"loopstart" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"engine" : [ "avf" ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"time" : [ 0 ],
+									"automatic" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"loopend" : [ 0 ],
+									"texture_name" : [ "u424001216" ],
+									"usesrcrect" : [ 0 ],
+									"loopreport" : [ 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"id" : "obj-4",
+					"maxclass" : "jit.playlist",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "jit_matrix", "", "dictionary" ],
+					"patching_rect" : [ 57.0, 144.5, 150.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-77",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -69,10 +121,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 342.0, 464.0, 149.0, 22.0 ],
-					"presentation_rect" : [ 535.0, 523.0, 0.0, 0.0 ],
+					"patching_rect" : [ 342.0, 464.0, 143.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.slide @slide_down 100."
+					"text" : "jit.slide @slide_down 50."
 				}
 
 			}
@@ -296,31 +347,31 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u162000477" ],
 									"dim" : [ 1, 1 ],
-									"output_texture" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"engine" : [ "avf" ],
-									"usesrcrect" : [ 0 ],
-									"autostart" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
 									"interp" : [ 0 ],
-									"usedstrect" : [ 0 ],
-									"moviefile" : [ "" ],
-									"framereport" : [ 0 ],
-									"loopstart" : [ 0 ],
-									"position" : [ 0.0 ],
-									"time_secs" : [ 0.0 ],
-									"vol" : [ 1.0 ],
-									"loopreport" : [ 0 ],
-									"unique" : [ 0 ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"automatic" : [ 0 ],
 									"rate" : [ 0.1 ],
-									"texture_name" : [ "u433000475" ],
+									"output_texture" : [ 0 ],
 									"adapt" : [ 1 ],
 									"colormode" : [ "argb" ],
-									"time" : [ 0 ]
+									"moviefile" : [ "" ],
+									"position" : [ 0.0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"vol" : [ 1.0 ],
+									"framereport" : [ 0 ],
+									"unique" : [ 0 ],
+									"drawto" : [ "" ],
+									"autostart" : [ 1 ],
+									"loopstart" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"engine" : [ "avf" ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"time" : [ 0 ],
+									"automatic" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"loopend" : [ 0 ],
+									"texture_name" : [ "u433000475" ],
+									"usesrcrect" : [ 0 ],
+									"loopreport" : [ 0 ]
 								}
 
 							}
@@ -555,6 +606,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"source" : [ "obj-45", 0 ]
 				}
@@ -694,6 +752,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "traffic.mov",
+				"bootpath" : "C74:/media/jitter",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "cv.jit.dilate.mxo",
 				"type" : "iLaX"
 			}
@@ -702,8 +766,8 @@
 		"styles" : [ 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
